@@ -8,7 +8,7 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 - Standalone： Access: http://IP:4040
 - Cluster mode：Through Spark log server xxxxxx:18088 or yarn UI, and enter the corresponding Spark UI interface.
 ## Architecture
-![](https://github.com/kubernetes/sample-controller/raw/master/docs/images/client-go-controller-interaction.jpeg)
+![](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
 
 ## Compile
 
