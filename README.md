@@ -1,16 +1,20 @@
-##Basic logic
-####1、use client-go reflector list && watch spark driver service send to workqueue
-####2、use client-go reflector list && watch ingressroute
-####3、itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.
+# Spark Web UI Controller
+## Introduce
+### Why Spark On Kubernetes?
 
-##Client go informer
+### What is Spark Web UI?
+Apache Spark provides a suite of web user interfaces (UIs) that you can use to monitor the status and resource consumption of your Spark cluster.
+### How to access Spark Web UI?
+- Standalone： Access: http://IP:4040
+- Cluster mode：Through Spark log server xxxxxx:18088 or yarn UI, and enter the corresponding Spark UI interface.
+## Architecture
 ![](https://github.com/kubernetes/sample-controller/raw/master/docs/images/client-go-controller-interaction.jpeg)
 
-##Useage
+## Compile
 
-##Build Image
+## Build Image
 
-
+## Useage
 
 
 
