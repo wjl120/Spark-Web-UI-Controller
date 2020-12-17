@@ -7,8 +7,8 @@ When you run your spark application on EKS, You will encounter some problems, on
 Apache Spark provides a suite of web user interfaces (UIs) that you can use to monitor the status and resource consumption of your Spark cluster.
 
 ### How to access Spark Web UI?
-Stand-alone：Access http://IP:4040
-Cluster model：Through Spark log server xxxxxx:18088 or yarn's UI, enter the corresponding Spark UI interface, like xxxx:8088.
+- Stand-alone：Access http://IP:4040
+- Cluster model：Through Spark log server xxxxxx:18088 or yarn's UI, enter the corresponding Spark UI interface, like xxxx:8088.
 
 ## 2.Architecture
 
