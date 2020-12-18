@@ -23,9 +23,17 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 - Standalone： Access: http://IP:4040
 - Cluster mode：Through Spark log server xxxxxx:18088 or yarn UI, and enter the corresponding Spark UI interface.
 
+### Problems accessing Spark Web UI when Spark On EKS
+- The Spark Web UI does not have a fixed access address and the address it is internal of EKS and is not directly accessible externally.
+- Cannot fix the web UI for each spark task to an external ELB.
+
 ## Architecture
 ![](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
-
+### Basic logic
+  1、use client-go reflector list && watch spark driver service send to workqueue.
+  2、use client-go reflector list && watch ingressroute.
+  3、itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.
+  
 ## Compile
 
 
