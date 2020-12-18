@@ -14,8 +14,8 @@ Deploying Spark on Kubernetes gives you powerful features for free such as the u
 On other cluster-managers (YARN, Standalone, Mesos) if you want to reuse the same cluster for concurrent Spark apps (for cost reasons), you'll have to compromise on isolation:  
   1、 Dependency isolation. These apps must use the same global Spark and python version.  
   2、 Performance isolation. If someone else kicks off a big job, my job is likely to run slower.
-On the other hand, with dynamic allocation and cluster autoscaling correctly configured, Kubernetes will give you the cost benefits of a shared infrastructure and the full isolation of disjoint container sets. It takes about 10s for Kubernetes to remove an idle Spark executor from one app and allocate this capacity to another app.
-AWS Simplify running Apache Spark jobs with Amazon EMR on Amazon EKS:  
+On the other hand, with dynamic allocation and cluster autoscaling correctly configured, Kubernetes will give you the cost benefits of a shared infrastructure and the full isolation of disjoint container sets. It takes about 10s for Kubernetes to remove an idle Spark executor from one app and allocate this capacity to another app.  
+AWS announced simplify running Apache Spark jobs with Amazon EMR on Amazon EKS:  
 https://aws.amazon.com/cn/about-aws/whats-new/2020/12/simplify-running-apache-spark-jobs-amazon-emr-amazon-eks/
 
 ### What is Spark Web UI?
