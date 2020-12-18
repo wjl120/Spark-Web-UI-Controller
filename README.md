@@ -3,13 +3,14 @@
 ### Why Spark On Kubernetes?
 Benefits of Spark on Kubernetes:
 - Containerization
-The benefits of containerization in traditional software engineering apply to big data and Spark too. Containers make your applications more portable, they simplify the packaging of dependencies, they enable repeatable and reliable build workflows. They reduce the overall devops load and allow you to iterate on your code faster.The top 3 benefits of using Docker containers for Spark:
+The benefits of containerization in traditional software engineering apply to big data and Spark too. Containers make your applications more portable, they simplify the packaging of dependencies, they enable repeatable and reliable build workflows. They reduce the overall devops load and allow you to iterate on your code faster.
+The top 3 benefits of using Docker containers for Spark:
   1) Build your dependencies once, run everywhere (locally or at scale)
   2) Make Spark more reliable and cost-efficient.
   3) Speed up your iteration cycle 
 - Integration in a rich ecosystem
 Deploying Spark on Kubernetes gives you powerful features for free such as the use of  namespaces and quotas for multitenancy control, and role-based access control (optionally integrated with your cloud provider IAM) for fine-grained security and data access.
--Efficient resource sharing
+- Efficient resource sharing
 On other cluster-managers (YARN, Standalone, Mesos) if you want to reuse the same cluster for concurrent Spark apps (for cost reasons), you'll have to compromise on isolation:
 
 Dependency isolation. These apps must use the same global Spark and python version.
