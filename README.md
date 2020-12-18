@@ -12,15 +12,17 @@ The top 3 benefits of using Docker containers for Spark:
 Deploying Spark on Kubernetes gives you powerful features for free such as the use of  namespaces and quotas for multitenancy control, and role-based access control (optionally integrated with your cloud provider IAM) for fine-grained security and data access.
 - Efficient resource sharing  
 On other cluster-managers (YARN, Standalone, Mesos) if you want to reuse the same cluster for concurrent Spark apps (for cost reasons), you'll have to compromise on isolation:  
-- Dependency isolation. These apps must use the same global Spark and python version.
-- Performance isolation. If someone else kicks off a big job, my job is likely to run slower.
-- On the other hand, with dynamic allocation and cluster autoscaling correctly configured, Kubernetes will give you the cost benefits of a shared infrastructure and the full isolation of disjoint container sets. It takes about 10s for Kubernetes to remove an idle Spark executor from one app and allocate this capacity to another app.
-### What is Spark Web UI?
+  1. Dependency isolation. These apps must use the same global Spark and python version.
+  2. Performance isolation. If someone else kicks off a big job, my job is likely to run slower.
+On the other hand, with dynamic allocation and cluster autoscaling correctly configured, Kubernetes will give you the cost benefits of a shared infrastructure and the full isolation of disjoint container sets. It takes about 10s for Kubernetes to remove an idle Spark executor from one app and allocate this capacity to another app.
 
+### What is Spark Web UI?
 Apache Spark provides a suite of web user interfaces (UIs) that you can use to monitor the status and resource consumption of your Spark cluster.
+
 ### How to access Spark Web UI?
 - Standalone： Access: http://IP:4040
 - Cluster mode：Through Spark log server xxxxxx:18088 or yarn UI, and enter the corresponding Spark UI interface.
+
 ## Architecture
 ![](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
 
