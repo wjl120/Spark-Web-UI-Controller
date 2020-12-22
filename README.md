@@ -38,7 +38,8 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 ### Basic logic  
   1、Use client-go reflector list && watch spark driver service and send to workqueue.  
   2、Use client-go reflector list && watch ingressroute.  
-  3、Itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.
+  3、Itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.  
+  4、Envoy proxy the spark ui on ELB.
   
 ## Compile & Build Image
 The process of compiling the go language is contained in the Dockerfile.
