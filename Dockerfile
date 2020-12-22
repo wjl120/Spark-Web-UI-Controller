@@ -13,3 +13,4 @@ RUN apk add --no-cache tini
 
 COPY entrypoint.sh /usr/bin/
 ENTRYPOINT ["sh","/usr/bin/entrypoint.sh"]
+
