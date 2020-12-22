@@ -31,10 +31,10 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 
 ## Architecture 
 ![Conponent][1]
-[1](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png)
+[1]:https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png
 
 ![Workflow diagram][2]
-[2](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
+[2]:https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png
 
 
 ### Basic logic  
