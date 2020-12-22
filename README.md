@@ -33,7 +33,7 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 ##### Conponent
 ![Conponent](/component.png)
 ##### Workflow diagram
-![Workflow diagram](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
+![Workflow diagram](/Architecture.png)
 
 ### Basic logic  
   1、Use client-go reflector list && watch spark driver service and send to workqueue.  
