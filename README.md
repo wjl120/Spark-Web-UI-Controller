@@ -35,7 +35,7 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 ![Workflow diagram](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
 
 <p align="center">
-  <img src="https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png" title="Conponent">
+  <img src="https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png" alt="Conponent" title="Conponent">
 </p>
 
 ### Basic logic  
