@@ -41,13 +41,15 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
   3、Itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.
   
 ## Compile & Build Image
-In the directory where the Dockerfile is located 
+The process of compiling the go language is contained in the Dockerfile.
+Into the directory where the Dockerfile is located and run the below command. 
 ```Shell
 docker build -t spark-ui-controller-envoy:1.0 .
 ```
 
 ## Useage
-
-
-
-
+Upload the image produced by the above steps to your repository, and run below command in your kubectl environment:
+```Shell
+kubectl apply -f deploy-contour.yaml
+kubectl apply -f deploy-controller.yaml
+```
