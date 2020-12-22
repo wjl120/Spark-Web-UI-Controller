@@ -30,14 +30,10 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 - Cannot fix the web UI for each spark task to an external ELB.
 
 ## Architecture 
-<center>Conponent</center>  
+##### Conponent
 ![Conponent](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png)
-
+##### Workflow diagram
 ![Workflow diagram](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
-
-<p align="center">
-  <img src="https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png" alt="Conponent" title="Conponent">
-</p>
 
 ### Basic logic  
   1、Use client-go reflector list && watch spark driver service and send to workqueue.  
