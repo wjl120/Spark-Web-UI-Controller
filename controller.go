@@ -114,7 +114,7 @@ func (c *Controller) HasSynced() bool {
 
 // runWorker is a long-running function that will continually call the
 // processNextWorkItem function in order to read and process a message on the
-// workqueue.
+// workqueue. 
 func (c *Controller) runWorker() {
 	for c.processNextWorkItem() {
 	}
