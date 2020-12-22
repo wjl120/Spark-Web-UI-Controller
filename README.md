@@ -30,11 +30,9 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 - Cannot fix the web UI for each spark task to an external ELB.
 
 ## Architecture 
-![Conponent][1]
-[1]:https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png
+![Conponent](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png)
 
-![Workflow diagram][2]
-[2]:https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png
+![Workflow diagram](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
 
 
 ### Basic logic  
