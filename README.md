@@ -29,11 +29,12 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
 - The Spark Web UI does not have a fixed access address and the address it is internal of EKS and is not directly accessible externally.
 - Cannot fix the web UI for each spark task to an external ELB.
 
-## Architecture
-<p align="center">Picture1 Conponent</p>  
-![](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png)
+## Architecture 
+![Conponent][1]
+[1](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/component.png)
 
-![](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
+![Workflow diagram][2]
+[2](https://github.com/wjl120/Spark-Web-UI-Controller-/blob/main/Architecture.png)
 
 
 ### Basic logic  
