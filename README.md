@@ -40,10 +40,11 @@ Apache Spark provides a suite of web user interfaces (UIs) that you can use to m
   2、Use client-go reflector list && watch ingressroute.  
   3、Itorate workqueue, when get spark driver svc notification, try to create spark ui and ingressroute.
   
-## Compile
-
-
-## Build Image
+## Compile & Build Image
+In the directory where the Dockerfile is located 
+```Shell
+docker build -t spark-ui-controller-envoy:1.0 .
+```
 
 ## Useage
 
